@@ -16,6 +16,7 @@
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
+
 /* Variables end */
 
 html {
@@ -69,16 +70,16 @@ nav {
 }
 
 nav h1 {
-  color: var(--primary-color);
+  color: #4a6741;
 }
 
 nav a {
-  color: var(--primary-color);
+  color: #4a6741;
   transition: var(--transition);
 }
+
 nav a:hover {
-  color: var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
+  color: #bd4343;
 }
 
 nav ul {
@@ -98,6 +99,7 @@ nav ul li {
   cursor: pointer;
   display: none;
 }
+
 /* Navbar ends */
 
 /* Hero section */
@@ -111,7 +113,7 @@ nav ul li {
 }
 
 .hero img {
-  height: 37.5rem;
+  height: 30.5rem;
   width: 37.5rem;
 }
 
@@ -130,6 +132,7 @@ nav ul li {
   line-height: var(--line-height);
   padding: 0.3rem 0;
 }
+
 /* Hero section ends */
 
 /* More about */
@@ -147,6 +150,7 @@ nav ul li {
   line-height: var(--line-height);
   padding: 0.4rem;
 }
+
 /* More about ends */
 
 /* Skills section */
@@ -169,6 +173,7 @@ nav ul li {
   width: 11.875rem;
   height: 11.25rem;
 }
+
 /* Skills section ends */
 
 /* Projects section */
@@ -276,6 +281,7 @@ nav ul li {
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
+
 /* Contacts section ends */
 
 /* Social buttons */
@@ -291,6 +297,7 @@ nav ul li {
   width: 2rem;
   height: 2rem;
 }
+
 /* Social button ends */
 
 /* Scroll to top button */
@@ -305,6 +312,7 @@ nav ul li {
   width: 3rem;
   height: 3rem;
 }
+
 /* Scroll to top button ends */
 
 /* Footer section */
@@ -314,6 +322,7 @@ footer {
   text-align: center;
   margin: 2rem 0 0;
 }
+
 /* Footer section ends */
 
 /* General (utilities) */
@@ -338,6 +347,7 @@ footer {
   nav {
     padding: 1.5rem 1rem;
   }
+
   nav ul {
     position: fixed;
     background-color: var(--bg-color);
