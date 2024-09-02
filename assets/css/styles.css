@@ -100,6 +100,7 @@ nav ul li {
 /* Hero section */
 .hero {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
@@ -292,24 +293,34 @@ footer {
   }
 
   .hero {
-    margin-top: -4rem;
     flex-direction: column;
-    gap: 0;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
   }
 
   .hero img {
-    height: 37.5rem;
-    width: 30rem;
+    width: 100%;
+    height: auto;
+    z-index: 1;
   }
 
   .bio {
-    margin-top: -7rem;
-    width: 20.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    /* Ensure spacing between image and text */
+    padding: 1rem;
+    box-sizing: border-box;
+    z-index: 2;
   }
 
   .more-about {
-    margin-top: 2rem;
-    padding: 1rem 3.5rem;
+    margin-top: 0;
+    /* Remove or adjust the negative margin */
+    width: 100%;
+    /* Ensure it scales with the screen */
+    padding: 1rem;
+    box-sizing: border-box;
   }
 
   .more-about h2 {
@@ -340,9 +351,20 @@ footer {
 
 @media screen and (max-width: 420px) {
   .hero img {
-    height: 37.5rem;
-    width: 23rem;
+    width: 100%;
+    height: auto;
+    z-index: 1;
   }
+
+  .hero {
+    flex-direction: column;
+    /* Stack items vertically on smaller screens */
+    gap: 1rem;
+    /* Reduce gap between elements */
+    padding: 1rem;
+    /* Add some padding to the section */
+  }
+
 
   .bio {
     width: 18.3rem;
